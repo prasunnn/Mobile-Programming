@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+    <TextView
+        android:id="@+id/txttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textSize="20sp"
+        android:layout_x="130sp"
+        android:layout_y="20dp"/>
+
+    <EditText
+        android:id="@+id/editnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="70dp"
+        android:hint="Enter first number"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editnum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="140dp"
+        android:hint="Enter second number"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Addition"
+        android:textSize="20sp"
+        android:layout_x="120dp"
+        android:layout_y="220dp"/>
+</AbsoluteLayout>
