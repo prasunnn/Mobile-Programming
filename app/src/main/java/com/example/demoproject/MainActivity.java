@@ -13,17 +13,18 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    EditText t1,t2;
+    EditText t1,t2, t3;
     Button b1;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.constraintlayout_ex);
-        t1=findViewById(R.id.txteditusername);
-        t2=findViewById(R.id.txteditpassword);
-        b1=findViewById(R.id.login);
+        setContentView(R.layout.calculator_app);
+        t1=findViewById(R.id.txtfirstnumber);
+        t2=findViewById(R.id.txtsecondnumber);
+        t3 = findViewById(R.id.txtsum);
+        b1=findViewById(R.id.btnadd);
 
         //setContentView(R.layout.activity_main);
         //setContentView(R.layout.absolute_ex);
@@ -34,8 +35,11 @@ public class MainActivity extends AppCompatActivity {
         //});
     }
     public void showInfo(View V){
-        String uname = t1.getText().toString();
-        String upass = t2.getText().toString();
-        Toast.makeText(getApplicationContext(), "Username = "+ uname + "\nPassword = "+ upass, Toast.LENGTH_LONG).show();
+        String num1 = t1.getText().toString();
+        String num2 = t2.getText().toString();
+        int a = Integer.parseInt(num1);
+        int b = Integer.parseInt(num2);
+        int sum = a+b;
+        t3.setText("Sum is "+ sum);
     }
 }
