@@ -49,10 +49,10 @@
         app:layout_constraintRight_toRightOf="parent"
         android:onClick="showInfo"
         android:id="@+id/btnadd" />
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Sum is "
+
         android:textSize="20sp"
         android:textStyle="italic"
         android:layout_margin="20dp"
