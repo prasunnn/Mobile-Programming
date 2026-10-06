@@ -31,17 +31,17 @@ public class RadiobuttonActivity extends AppCompatActivity implements View.OnCli
     }
     public void onClick(View v) {
 
-        StringBuffer res = new StringBuffer("Programming: ");
+        String str = " ";
 
         if (r1.isChecked())
-            res.append("Java ");
+            str += "Java";
 
         if (r2.isChecked())
-            res.append("Kotlin ");
+            str += "Kotlin";
 
         if (r3.isChecked())
-            res.append("Swift ");
+            str += "Swift";
 
-        Toast.makeText(this, res.toString(), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Checked Programming: " + str.toString(), Toast.LENGTH_LONG).show();
     }
 }
