@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadiobuttonActivity"
+    android:orientation="vertical"
+    android:layout_margin="40dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select any one programming: "
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:id="@+id/txtprogram"/>
+    
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/radio1"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kotlin"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/radio2"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Swift"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/radio3"/>
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckboxActivity"
+    android:orientation="vertical"
+    android:layout_margin="50dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hobbies: "
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:id="@+id/txthobbies"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reading"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/check1"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Playing Cricket"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/check2"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Travelling"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/check3"/>
+</LinearLayout>
