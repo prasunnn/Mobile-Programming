@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">DemoProject</string>
+    <string name="cname">Patan Multiple Campus</string>
+    <string-array name="pl">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>PHP</item>
+        <item>C#</item>
+    </string-array>
+    <string-array name="dept">
+        <item>BCA</item>
+        <item>BIT</item>
+        <item>CSIT</item>
+    </string-array>
 </resources>
